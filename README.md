@@ -33,7 +33,7 @@ Front End - Protótipo
  - Será realizado os requisitos com prioridade média e alta.
 
 ## Objetivos e benefícios do produto: 
- - Oferecer Informações sobre os parques naturais de Teresópolis, englobando o Parque Nacional da Serra dos Órgãos, Parque Estadual dos Três Picos e Parque Municipal das Montanhas de Teresópolis, a fim de saber horários de funcionamento, disponibilidade de Trilhas e eventos de temporada nos parques.
+ - Oferecer Informações sobre os parques naturais de Teresópolis, englobando o Parque Nacional da Serra dos Órgãos, Parque Estadual dos Três Picos e Parque Municipal das Montanhas de Teresópolis, a fim de informar horários de funcionamento, disponibilidade de Trilhas e eventos de temporada nos parques.
 
 ## Público alvo:
  - Pessoas que praticam montanhismo.
