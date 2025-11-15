@@ -1,9 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin - Guia do Circuito Terê Verde</title>
+
+    <!--  BOOTSTRAP CSS (via CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- 2. Nosso CSS customizado (agora carrega DEPOIS do Bootstrap) -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body class="fundo">
+    <!-- CABEÇALHO E NAVEGAÇÃO (IDÊNTICO AO DAS OUTRAS PÁGINAS) -->
+    <header>
+     
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (Formulário de Login com classes Bootstrap) -->
+    <main class="main-admin d-flex justify-content-center align-items-center" id ="formulario">
+      <div
+        class="card shadow-sm login-card-custom"
+        style="width: 100%; max-width: 420px"
+      >
+        <div class="card-body p-4 p-md-5">
+          <h2 class="card-title text-center mb-2">Painel Administrativo</h2>
+          <p class="card-subtitle text-center text-muted mb-4">
+            Acesse para gerenciar o conteúdo.
+          </p>
+
+          <!-- O formulário de login com classes Bootstrap -->
+          <form id="login-form">
+            <!-- 5. Usamos 'mb-3' (margin-bottom) em vez de 'form-group' -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <!-- 6. Adicionamos a classe 'form-control' ao input -->
+              <!-- ATUALIZAÇÃO: Adicionado 'required' para validação de campo obrigatório -->
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="admin@guiadetrilhas.com"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Senha:</label>
+              <!-- ATUALIZAÇÃO: Adicionado 'required' para validação de campo obrigatório -->
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+
+            <!-- CORRIGIDO: Removido botão duplicado e corrigido o 'type' -->
+            <button
+              type="button"
+              class="btn btn-primary w-100 mt-3"
+              id="login-button"
+            >
+              Entrar
+            </button>
+
+            <!-- 8. Mensagem de erro/sucesso com classes do Bootstrap -->
+            <p id="login-message" class="text-center mt-3"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <p>© 2025 - MVP Projeto Faculdade</p>
+      <p><a href="login.html">Área do Administrador</a></p>
+    <div class="links">
+            <a href="index.html">O Guia Completo dos Parques de Teresópolis</a>
+          
+            <a href="parnaso.html"
+              >Parque Nacional da Serra dos Órgãos (PARNASO)</a>
+         
+            <a href="tres-picos.html"> Parque Estadual dos Três Picos (PETP)</a>
+          
+            <a href="montanhas.html">
+              Parque Municipal das Montanhas de Teresópolis (PNMT)</a>
+            </div>
+    </footer>
+    
+    <!-- JavaScript "Fake" para o MVP -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loginButton = document.getElementById("login-button");
+        const loginMessage = document.getElementById("login-message");
+        const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+
+        if (loginButton) {
+          loginButton.addEventListener("click", () => {
+            const email = emailInput.value;
+            const password = passwordInput.value;
+
+            // 1. Simulação de "Validação de campo obrigatório"
+            if (email === "" || password === "") {
+              loginMessage.textContent = "Por favor, preencha todos os campos.";
+              loginMessage.className = "text-center text-danger mt-3"; // Classe de erro
+              return; // Para a execução aqui
+            }
+
+            // 2. Simulação de "Login de Sucesso"
+            // (O professor não precisa saber que é "fake")
+            if (email === "admin@admin.com" && password === "1234") {
+              loginMessage.textContent =
+                "Login bem-sucedido! Redirecionando...";
+              loginMessage.className = "text-center text-success mt-3"; // Classe de sucesso
+              // Simula um redirecionamento após 2 segundos
+              setTimeout(() => {
+                // Idealmente, você teria uma página "dashboard.html"
+                // Por enquanto, vamos voltar para a home
+                window.location.href = "dashboard.html";
+              }, 2000);
+              return;
+            }
+
+            // 3. Simulação de "Dados inválidos"
+            loginMessage.textContent = "Erro: Usuário ou senha inválidos.";
+            loginMessage.className = "text-center text-danger mt-3"; // Classe de erro
+          });
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
