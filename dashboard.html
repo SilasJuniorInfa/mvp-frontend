@@ -111,7 +111,7 @@
                   <!-- ITEM 2: TRÊS PICOS -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button
+                      <button 
                         class="accordion-button collapsed btn btn-success"
                         type="button"
                         data-bs-toggle="collapse"
@@ -234,45 +234,121 @@
           </div>
 
           <!-- Coluna 2: Publicar Novidades (Sem alteração) -->
-          <div class="col-12">
-            <div class="card shadow-sm mb-4">
-              <div class="card-header">
-                <h5 class="mb-0">Publicar Novidade ou Evento</h5>
-              </div>
-              <div class="card-body">
-                <form id="form-novidade">
-                  <div class="mb-3">
-                    <label for="novidade-titulo" class="form-label"
-                      >Título da Matéria</label
-                    >
-                    <input
-                      type="text"
-                      id="novidade-titulo"
-                      class="form-control"
-                      placeholder="Ex: Temporada de Montanha no PARNASO"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="novidade-conteudo" class="form-label"
-                      >Conteúdo</label
-                    >
-                    <textarea
-                      id="novidade-conteudo"
-                      class="form-control"
-                      rows="8"
-                      placeholder="Escreva a notícia aqui..."
-                    ></textarea>
-                  </div>
-                  <button type="button" class="btn btn-danger btn-simular">
-                    Publicar Novidade
-                  </button>
-                </form>
-              </div>
-            </div>
+          <div class="accordion" id="painelAdminAccordion">
+
+           <div class="accordion-item shadow-sm mb-4"> <h2 class="accordion-header">
+            <button class="accordion-button btn btn-success" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#collapseNovidade" 
+              aria-expanded="true" 
+              aria-controls="collapseNovidade">
+        <b>Publicar Novidade ou Evento</b>
+      </button>
+    </h2>
+
+    <div id="collapseNovidade" 
+         class="accordion-collapse collapse show" 
+         data-bs-parent="#painelAdminAccordion">
+      
+      <div class="accordion-body">
+        
+        <form id="form-novidade">
+          <div class="mb-3">
+            <label for="novidade-titulo" class="form-label">
+              Título da Matéria
+            </label>
+            <input
+              type="text"
+              id="novidade-titulo"
+              class="form-control"
+              placeholder="Ex: Temporada de Montanha no PARNASO"
+            />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="novidade-conteudo" class="form-label">
+              Conteúdo
+            </label>
+            <textarea
+              id="novidade-conteudo"
+              class="form-control"
+              rows="8"
+              placeholder="Escreva a notícia aqui..."
+            ></textarea>
+          </div>
+          <button type="button" class="btn btn-danger btn-simular">
+            Publicar Novidade
+          </button>
+        </form>
+        
+      </div> </div> </div> 
+      
+      <div class="accordion-item shadow-sm mb-4">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed btn btn-success" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#collapseTrilhas" 
+              aria-expanded="false" 
+              aria-controls="collapseTrilhas">
+        <b>Gerenciar Trilhas</b> 
+      </button>
+    </h2>
+    <div id="collapseTrilhas" 
+         class="accordion-collapse collapse" 
+         data-bs-parent="#painelAdminAccordion">
+      
+      <div class="accordion-body">
+        <form>
+                          <div class="mb-3">
+                            <label class="form-label">Parque</label>
+                            <select class="form-select">
+                              <option value="Parque Nacional da Serra dos Órgãos">Parque Nacional da Serra dos Órgãos</option>
+                              <option value="Parque Estadual dos Três Picos">
+                                Parque Estadual dos Três Picos
+                              </option>
+                              <option value="Parque Municipal das Montanhas">Parque Municipal das Montanhas</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                                                                  
+                                                       <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option value="aberto">Acesso livre</option>
+                              <option value="fechado">
+                                Alerta de Chuvas
+                              </option>
+                              <option value="restrito">Perigo iminente - Interditado</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label"
+                              >Horário de Funcionamento</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="Sempre aberto (área de refúgio)"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Aviso</label>
+                            <textarea
+                              class="form-control"
+                              rows="2"
+                              placeholder="Aviso importante sobre o parque..."
+                            ></textarea>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-danger btn-sm btn-simular"
+                          >
+                            Salvar (Disponibilidade/Restrição)
+                          </button>
+                        </form>
       </div>
-    </main>
+    </div>
+  </div> </div>
 
     <!-- RODAPÉ (IDÊNTICO AO DAS OUTRAS PÁGINAS) -->
     <footer class="rodape">
