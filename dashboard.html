@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Admin</title>
 
-    <!-- 1. BOOTSTRAP CSS (CORRIGIDO: 'integrity' em vez de 'xintegrity') -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
 
-    <!-- 2. Nosso CSS customizado -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- CABEÇALHO E NAVEGAÇÃO (IDÊNTICO AO DAS OUTRAS PÁGINAS) -->
     <header>
-      
-    </header>
+      </header>
 
-    <!-- CONTEÚDO PRINCIPAL (Simulação de Dashboard) -->
     <main class="dashboard-main">
       <div class="container py-5">
-        <h1 class="mb-4" id ="titulo">Painel de Gerenciamento - Circuito Terê Verde</h1>
+        <h1 class="mb-4" id="titulo">
+          Painel de Gerenciamento - Circuito Terê Verde
+        </h1>
 
-        <!-- Mensagem de Sucesso da Simulação -->
         <div
           id="simulacao-mensagem"
           class="alert alert-success d-none"
@@ -37,21 +33,18 @@
         </div>
 
         <div class="row">
-          <!-- Coluna 1: Gestão de Disponibilidade (AGORA COM ACCORDION) -->
           <div class="col-12">
             <div class="card shadow-sm mb-4">
               <div class="card-header">
                 <h5 class="mb-0">Gestão de Disponibilidade e Horários</h5>
               </div>
               <div class="card-body">
-                <!-- ATUALIZAÇÃO: Usando um Accordion para cada parque -->
                 <div class="accordion" id="gestaoParquesAccordion">
-                  <!-- ITEM 1: PARNASO -->
+                  
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button btn btn-success"
-                        type="button"
+                        class="accordion-button" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseParnaso"
                         aria-expanded="true"
@@ -71,18 +64,12 @@
                             <label class="form-label">Status</label>
                             <select class="form-select">
                               <option value="aberto">Aberto</option>
-                              <option value="fechado">
-                                Fechado (Manutenção)
-                              </option>
-                              <option value="restrito">
-                                Restrito (Trilhas Específicas)
-                              </option>
+                              <option value="fechado">Fechado (Manutenção)</option>
+                              <option value="restrito">Restrito (Trilhas Específicas)</option>
                             </select>
                           </div>
                           <div class="mb-3">
-                            <label class="form-label"
-                              >Horário de Funcionamento</label
-                            >
+                            <label class="form-label">Horário de Funcionamento</label>
                             <input
                               type="text"
                               class="form-control"
@@ -108,12 +95,10 @@
                     </div>
                   </div>
 
-                  <!-- ITEM 2: TRÊS PICOS -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button collapsed btn btn-success"
-                        type="button"
+                        class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTresPicos"
                         aria-expanded="false"
@@ -124,8 +109,7 @@
                     </h2>
                     <div
                       id="collapseTresPicos"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#gestaoParquesAccordion"
+                      class="accordion-collapse collapse" data-bs-parent="#gestaoParquesAccordion"
                     >
                       <div class="accordion-body">
                         <form>
@@ -133,29 +117,9 @@
                             <label class="form-label">Status</label>
                             <select class="form-select">
                               <option value="aberto">Aberto</option>
-                              <option value="fechado">
-                                Fechado (Manutenção)
-                              </option>
+                              <option value="fechado">Fechado (Manutenção)</option>
                               <option value="restrito">Restrito</option>
                             </select>
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Horário de Funcionamento</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              value="Sempre aberto (área de refúgio)"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <label class="form-label">Aviso</label>
-                            <textarea
-                              class="form-control"
-                              rows="2"
-                              placeholder="Aviso importante sobre o parque..."
-                            ></textarea>
                           </div>
                           <button
                             type="button"
@@ -168,11 +132,10 @@
                     </div>
                   </div>
 
-                  <!-- ITEM 3: MONTANHAS DE TERESÓPOLIS -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button collapsed btn btn-success"
+                        class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseMontanhas"
@@ -193,21 +156,141 @@
                             <label class="form-label">Status</label>
                             <select class="form-select">
                               <option value="aberto">Aberto</option>
-                              <option value="fechado">
-                                Fechado (Manutenção)
-                              </option>
+                              <option value="fechado">Fechado (Manutenção)</option>
                               <option value="restrito">Restrito</option>
                             </select>
                           </div>
+                          <button
+                            type="button"
+                            class="btn btn-danger btn-sm btn-simular"
+                          >
+                            Salvar (Montanhas)
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card shadow-sm mb-4">
+              <div class="card-header">
+                <h5 class="mb-0">Gestão de Avisos e Novidades</h5>
+              </div>
+              <div class="card-body">
+                <div class="accordion" id="accordionNovidades">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseNovidade"
+                        aria-expanded="true"
+                        aria-controls="collapseNovidade"
+                      >
+                        <b>Publicar Nova Novidade ou Evento</b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseNovidade"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionNovidades"
+                    >
+                      <div class="accordion-body">
+                        <form id="form-novidade">
                           <div class="mb-3">
-                            <label class="form-label"
-                              >Horário de Funcionamento</label
-                            >
+                            <label for="novidade-titulo" class="form-label">
+                              Título da Matéria
+                            </label>
                             <input
                               type="text"
+                              id="novidade-titulo"
                               class="form-control"
-                              value="Das 09:00 às 16:00"
+                              placeholder="Ex: Temporada de Montanha no PARNASO"
                             />
+                          </div>
+                          <div class="mb-3">
+                            <label for="novidade-conteudo" class="form-label">
+                              Conteúdo
+                            </label>
+                            <textarea
+                              id="novidade-conteudo"
+                              class="form-control"
+                              rows="8"
+                              placeholder="Escreva a notícia aqui..."
+                            ></textarea>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-danger btn-simular"
+                          >
+                            Publicar Novidade
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card shadow-sm mb-4">
+              <div class="card-header">
+                <h5 class="mb-0">Gestão de Alertas e Restrições</h5>
+              </div>
+              <div class="card-body">
+                <div class="accordion" id="accordionAlertas">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTrilhas"
+                        aria-expanded="false"
+                        aria-controls="collapseTrilhas"
+                      >
+                        <b>Gerenciar Alertas de Trilhas</b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTrilhas"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionAlertas"
+                    >
+                      <div class="accordion-body">
+                        <form>
+                          <div class="mb-3">
+                            <label class="form-label">Parque</label>
+                            <select class="form-select">
+                              <option value="Parque Nacional da Serra dos Órgãos">
+                                Parque Nacional da Serra dos Órgãos
+                              </option>
+                              <option value="Parque Estadual dos Três Picos">
+                                Parque Estadual dos Três Picos
+                              </option>
+                              <option value="Parque Municipal das Montanhas">
+                                Parque Municipal das Montanhas
+                              </option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option value="aberto">Acesso livre</option>
+                              <option value="fechado">Alerta de Chuvas</option>
+                              <option value="restrito">
+                                Perigo iminente - Interditado
+                              </option>
+                            </select>
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Aviso</label>
@@ -221,52 +304,13 @@
                             type="button"
                             class="btn btn-danger btn-sm btn-simular"
                           >
-                            Salvar (Montanhas)
+                            Salvar (Disponibilidade/Restrição)
                           </button>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Fim do Accordion -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Coluna 2: Publicar Novidades (Sem alteração) -->
-          <div class="col-12">
-            <div class="card shadow-sm mb-4">
-              <div class="card-header">
-                <h5 class="mb-0">Publicar Novidade ou Evento</h5>
-              </div>
-              <div class="card-body">
-                <form id="form-novidade">
-                  <div class="mb-3">
-                    <label for="novidade-titulo" class="form-label"
-                      >Título da Matéria</label
-                    >
-                    <input
-                      type="text"
-                      id="novidade-titulo"
-                      class="form-control"
-                      placeholder="Ex: Temporada de Montanha no PARNASO"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="novidade-conteudo" class="form-label"
-                      >Conteúdo</label
-                    >
-                    <textarea
-                      id="novidade-conteudo"
-                      class="form-control"
-                      rows="8"
-                      placeholder="Escreva a notícia aqui..."
-                    ></textarea>
-                  </div>
-                  <button type="button" class="btn btn-danger btn-simular">
-                    Publicar Novidade
-                  </button>
-                </form>
               </div>
             </div>
           </div>
@@ -274,23 +318,20 @@
       </div>
     </main>
 
+    <!-- RODAPÉ (IDÊNTICO AO DAS OUTRAS PÁGINAS) -->
     <footer class="rodape">
       <p>© 2025 - MVP Projeto Faculdade</p>
       <p><a href="login.html">Área do Administrador</a></p>
-    <div class="links">
-            <a href="index.html">O Guia Completo dos Parques de Teresópolis</a>
-          
-            <a href="parnaso.html"
-              >Parque Nacional da Serra dos Órgãos (PARNASO)</a>
-         
-            <a href="tres-picos.html"> Parque Estadual dos Três Picos (PETP)</a>
-          
-            <a href="montanhas.html">
-              Parque Municipal das Montanhas de Teresópolis (PNMT)</a>
-            </div>
+      <div class="links">
+        <a href="index.html">O Guia Completo dos Parques de Teresópolis</a>
+        <a href="parnaso.html">Parque Nacional da Serra dos Órgãos (PARNASO)</a>
+        <a href="tres-picos.html"> Parque Estadual dos Três Picos (PETP)</a>
+        <a href="montanhas.html">
+          Parque Municipal das Montanhas de Teresópolis (PNMT)</a
+        >
+      </div>
     </footer>
 
-    <!-- JavaScript "Fake" para o MVP (O script existente já funciona com os novos botões) -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         // Seleciona TODOS os botões que devem simular uma ação
@@ -311,9 +352,11 @@
         });
       });
     </script>
+
+    <!-- Bootstrap JS Bundle (CORRIGIDO: 'integrity' em vez de 'xintegrity') -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
