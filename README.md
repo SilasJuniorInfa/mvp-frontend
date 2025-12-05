@@ -53,8 +53,6 @@ Front End - Protótipo
  - Figma.
 
 ## Telas prototipadas:
- - Tela de login dos administradores.
- - Página Principal.
- - Página do Parque Nacional da Serra dos Órgãos.
- - Página do Parque Estadual dos Três Picos.
- - Página do Parque Municipal das Montanhas de Teresópolis.
+ - Tela de login.
+ - Tela dos administradores.
+ - Página Principal com os três parques.
