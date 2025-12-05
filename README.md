@@ -53,6 +53,6 @@ Front End - Protótipo
  - Power Point.
 
 ## Telas prototipadas:
- - Tela de login.
- - Tela dos administradores.
- - Página Principal com os três parques.
+ - Tela de login - baixa fidelidade.
+ - Tela dos administradores - baixa fidelidade.
+ - Página Principal com os três parques - baixa fidelidade.
