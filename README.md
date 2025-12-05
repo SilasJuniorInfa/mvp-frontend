@@ -50,7 +50,7 @@ Front End - Protótipo
  - Dificuldade de planejamento da visitação desses parques por falta de informação.
 
 ## Ferramenta de prototipação:
- - Figma.
+ - Power Point.
 
 ## Telas prototipadas:
  - Tela de login.
