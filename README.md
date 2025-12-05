@@ -23,11 +23,33 @@ Circuito Terê Verde
 Front End - Protótipo
 
 ## Instruções para executar/abrir o MVP:
- - 1 - Acesse a página principal deste repositório (index.html).
- - 2 - Acima da lista de arquivos, clique em "Código" e copie a URL.
- - 3 - Abra o terminal do seu navegador e altere o diretório atual para uma pasta vazia.
- - 4 - Digite "git clone" e cole a URL e pressione enter.
- - 5 - Abra esta pasta no explorador de arquivos, em seguida, abra o arquivo index.htlm no seu navegador.
+Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript puros, sem a necessidade de instalação de dependências via Node.js.
+
+### Pré-requisitos
+
+* [Git](https://git-scm.com) instalado.
+* Editor de código (recomendamos o [VS Code](https://code.visualstudio.com/)).
+* Extensão **Live Server** instalada no VS Code (Recomendado para evitar erros de CORS/carregamento).
+
+### Passo a passo
+
+1. **Clone o repositório**
+   Abra o terminal de sua preferência e execute o comando:
+   git clone [https://github.com/SilasJuniorInfa/mvp-frontend.git]
+
+2. Acesse a pasta do projeto:
+   cd mvp-frontend
+
+3. Execute a aplicação
+
+Abra a pasta do projeto no VS Code.
+
+Localize o arquivo index.html.
+
+Clique com o botão direito sobre o arquivo e selecione a opção "Open with Live Server".
+
+O navegador abrirá automaticamente com a aplicação rodando.
+
 
 ## MVP definido:
  - Será realizado os requisitos com prioridade média e alta.
