@@ -29,7 +29,7 @@ Front End - Protótipo
  - 4 - Digite "git clone" e cole a URL e pressione enter.
  - 5 - Abra esta pasta no explorador de arquivos, em seguida, abra o arquivo index.htlm no seu navegador.
 
-## MVP defenido:
+## MVP definido:
  - Será realizado os requisitos com prioridade média e alta.
 
 ## Objetivos e benefícios do produto: 
