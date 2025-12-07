@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parque Estadual dos Três Picos</title>
-    <link rel="stylesheet" href="tres-picos.css">
+    <link rel="stylesheet" href="pages.css">
 </head>
 <body>
 
-    <header>
-        <h1>Parque Estadual dos Três Picos</h1>
+    <header class="navbar">
+          <a class="menu-principal" href="../index-principal.html">Circuito Terê Verde</a>
+
+        <div class="login-container">
+          <a class="login" href="../login.html">Login</a>
+      </div>
+        <h1><br>Parque Estadual dos Três Picos</h1>
         <p>O gigante verde do Rio de Janeiro</p>
     </header>
 
@@ -18,127 +23,186 @@
             <li><a href="#historia">História</a></li>
             <li><a href="#trilhas">Trilhas</a></li>
             <li><a href="#biodiversidade">Biodiversidade</a></li>
+            <li><a href="#eventos">Eventos</a></li>
             <li><a href="#visita">Visitação</a></li>
         </ul>
     </nav>
 
     <section id="introducao" class="section">
-        <h2>Bem-vindo</h2>
-        <p>Seja bem-vindo ao Parque Estadual dos Três Picos — o maior e mais impressionante refúgio natural do estado do Rio de Janeiro.  <br>
-        Localizado no coração da Serra do Mar, o parque se estende por mais de 65 mil hectares de pura Mata Atlântica, conectando os municípios de Nova Friburgo, Teresópolis, Cachoeiras de Macacu, Guapimirim e Silva Jardim.  
-        Aqui, a natureza é a protagonista: picos que tocam o céu, rios cristalinos que nascem entre as montanhas, florestas exuberantes e uma biodiversidade que encanta a cada passo. <br> 
-        O visitante encontra trilhas que variam de rotas leves a desafios de altitude, perfeitas para quem busca aventura, contemplação ou simplesmente um momento de paz cercado pelo verde.  
-        Mais do que um destino, os Três Picos são uma experiência — um lugar para se desconectar do ritmo urbano e se reconectar com o essencial: o equilíbrio entre o ser humano e a natureza.</p>
-<div class="slideshow-container" data-slideshow="1">
-    <div class="slide">
-    <img src="imagens\img\3picos1.jpg" alt="" >
-    </div>
-    <div class="slide">
-<img src="imagens\img\3picos2.jpg" alt="" >    </div>
-    <div class="slide">
-<img src="imagens\img\3picos3.jpg" alt="" >    </div>
-    <button class="prev" onclick="mudarSlide(1, -1)">&#10094;</button>
-<button class="next" onclick="mudarSlide(1, 1)">&#10095;</button>
+    <h2>Bem-vindo</h2>
 
-   </div>
+    <p>
+        Seja bem-vindo ao Parque Estadual dos Três Picos — o maior e mais impressionante refúgio natural do estado do Rio de Janeiro.
+        Localizado no coração da Serra do Mar, o parque se estende por mais de 65 mil hectares de pura Mata Atlântica, conectando
+        os municípios de Nova Friburgo, Teresópolis, Cachoeiras de Macacu, Guapimirim e Silva Jardim.
+    </p>
+
+    <p>
+        Aqui, a natureza é a protagonista: picos que tocam o céu, rios cristalinos que nascem entre as montanhas, florestas exuberantes
+        e uma biodiversidade que encanta a cada passo. O visitante encontra trilhas que variam de rotas leves a desafios de altitude —
+        perfeitas para quem busca aventura, contemplação ou simplesmente um momento de paz cercado pelo verde.
+    </p>
+
+    <p>
+        Mais do que um destino, os Três Picos são uma experiência: um lugar para se desconectar do ritmo urbano e se reconectar
+        com o essencial — o equilíbrio entre o ser humano e a natureza.
+    </p>
+
+    <div class="slideshow-container" data-slideshow="1">
+        <div class="slide"><img src="imagens\img\3picos1.jpg" alt=""></div>
+        <div class="slide"><img src="imagens\img\3picos2.jpg" alt=""></div>
+        <div class="slide"><img src="imagens\img\3picos3.jpg" alt=""></div>
+        <button class="prev" onclick="mudarSlide(1, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1, 1)">&#10095;</button>
+    </div>
+</section>
 
     </section>
 
     <section id="historia" class="section">
-        <h2>História</h2>
-        <p>O Parque Estadual dos Três Picos foi criado oficialmente em 2002, por meio do Decreto Estadual nº 36.056, com o objetivo de proteger remanescentes da Mata Atlântica e as nascentes que abastecem boa parte da Região Serrana e Metropolitana do Rio de Janeiro.  
-        A área, entretanto, já era conhecida desde o início do século XX por sua imponência natural.<br> O conjunto de montanhas que dá nome ao parque — o Pico Menor, o Pico Médio e o Pico Maior — tornou-se referência para alpinistas e naturalistas. O Pico Maior, com 2.316 metros de altitude, é o ponto mais alto de toda a Serra do Mar e um dos principais símbolos do montanhismo brasileiro.  
-        Desde a década de 1940, escaladores desbravam suas paredes verticais, consolidando os Três Picos como um dos destinos mais desafiadores e icônicos do país.  
-        Ao longo das décadas seguintes, a preocupação com a degradação ambiental levou à mobilização de ambientalistas, pesquisadores e comunidades locais, culminando na criação do parque.  <br>
-        Hoje, o local é administrado pelo Instituto Estadual do Ambiente (INEA) e se destaca não apenas como área de conservação, mas também como um polo de turismo sustentável, pesquisa científica e educação ambiental.  
-        O Parque Estadual dos Três Picos é, portanto, um marco da convivência harmoniosa entre o homem e a natureza — um patrimônio fluminense de valor incalculável.</p>
-    </section>
+    <h2>História</h2>
+
+    <p>
+        O Parque Estadual dos Três Picos foi criado oficialmente em 2002, por meio do Decreto Estadual nº 36.056,
+        com o objetivo de proteger remanescentes da Mata Atlântica e as nascentes que abastecem grande parte da
+        Região Serrana e Metropolitana do Rio de Janeiro.
+    </p>
+
+    <p>
+        Muito antes disso, a área já era conhecida pela imponência do conjunto de montanhas que dá nome ao parque
+        — Pico Menor, Pico Médio e Pico Maior, sendo este último o ponto mais alto de toda a Serra do Mar,
+        com 2.316 metros de altitude.
+    </p>
+
+    <p>
+        Desde a década de 1940, montanhistas exploram suas paredes verticais, consolidando os Três Picos como um
+        dos destinos mais icônicos do montanhismo brasileiro. Com o tempo, o avanço da degradação ambiental gerou
+        mobilização de ambientalistas, pesquisadores e moradores locais, resultando na criação do parque.
+    </p>
+
+    <p>
+        Hoje, administrado pelo INEA, o parque é referência em conservação, turismo sustentável, pesquisa e
+        educação ambiental — um verdadeiro patrimônio natural fluminense.
+    </p>
+</section>
 
     <section id="trilhas" class="section">
         <h2>Trilhas</h2>
         <p>As trilhas do Parque Estadual dos Três Picos oferecem experiências para todos os níveis de aventureiros. Cada caminho revela um novo ângulo da Serra do Mar e uma conexão mais profunda com a natureza.</p>
-        <ul>
-            <li><strong>Trilha dos Três Picos:</strong> Uma das mais famosas e desafiadoras do parque. São cerca de 10 km de percurso, com trechos íngremes e escaladas em rocha, recompensados por uma das vistas mais impressionantes do estado. O percurso é indicado para montanhistas experientes e normalmente exige acompanhamento de guia credenciado.</li>
-          
-   <div class="slideshow-container" data-slideshow="2">
-    <div class="slide">
-   <img src="imagens\img\3picos4.jpg" alt="" >        </div>
-    <div class="slide">
-   <img src="imagens\img\3picos5.jpg" alt="" >        </div>
-   <div class="slide">   
-    <img src="imagens\img\3picos6.jpg" alt="">
-</div>
-     <button class="prev" onclick="mudarSlide(2, -1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(2,1)">&#10095;</button>
-   </div>
-
-         <li><strong>Trilha da Cabeça de Dragão:</strong> De dificuldade moderada a alta, é uma das favoritas para quem busca emoção e fotografia. O nome vem do formato curioso da rocha no topo. Durante o trajeto, é possível observar espécies de aves e bromélias nativas.</li>
-           <div class="slideshow-container" data-slideshow="3">
-    <div class="slide">
-        <img src="imagens\img\dragao.jpg">
+        <ul class="trilhas-lista">
+            <li>
+              <strong>Trilha dos Três Picos:</strong> Uma das mais famosas e desafiadoras do parque. São cerca de 10 km de percurso, com trechos íngremes e escaladas em rocha, recompensados por uma das vistas mais impressionantes do estado. O percurso é indicado para montanhistas experientes e normalmente exige acompanhamento de guia credenciado.
+                  
+      <div class="slideshow-container" data-slideshow="2">
+        <div class="slide">
+      <img src="imagens\img\3picos4.jpg" alt="" >        </div>
+        <div class="slide">
+      <img src="imagens\img\3picos5.jpg" alt="" >        </div>
+      <div class="slide">   
+        <img src="imagens\img\3picos6.jpg" alt="">
     </div>
-    <div class="slide">
-   <img src="imagens\img\dragao2.jpg">    </div>
-     <button class="prev" onclick="mudarSlide(3, -1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(3,1)">&#10095;</button>
-   </div>
-           
-        <li><strong>Trilha do Vale dos Deuses:</strong> Ideal para quem deseja uma imersão mais tranquila, essa trilha oferece contato direto com riachos e campos de altitude. É comum encontrar campistas e observadores de aves ao longo do caminho, especialmente no Vale dos Frades, região de beleza cênica marcante.</li>
-            <div class="slideshow-container" data-slideshow="4">
-    <div class="slide">
-     <img src="imagens\img\deuses.jpeg">    </div>
-    <div class="slide">
-    <img src="imagens\img\deuses2.JPG">    </div>
-     <button class="prev" onclick="mudarSlide(4,-1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(4,1)">&#10095;</button>
-   </div>
+        <button class="prev" onclick="mudarSlide(2, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(2,1)">&#10095;</button>
+      </div>
+   </li>
+
+         <li>
+          <strong>Trilha da Cabeça de Dragão:</strong> De dificuldade moderada a alta, é uma das favoritas para quem busca emoção e fotografia. O nome vem do formato curioso da rocha no topo. Durante o trajeto, é possível observar espécies de aves e bromélias nativas.
         
-        <li><strong>Trilha do Morro da Cruz:</strong> Percurso mais curto e de dificuldade leve, ideal para visitantes iniciantes e famílias. O mirante no topo revela uma vista panorâmica de parte do parque e das cidades vizinhas.</li>
-          <div class="slideshow-container" data-slideshow="5">
-    <div class="slide">       
-     <img src="imagens\img\cruz1.jpg">    </div>
-    <div class="slide">
-     <img src="imagens\img\cruz.jpg">    </div>
-     <button class="prev" onclick="mudarSlide(5, -1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(5, 1)">&#10095;</button>
-   </div>
+           <div class="slideshow-container" data-slideshow="3">
+        <div class="slide">
+            <img src="imagens\img\dragao.jpg">
+        </div>
+        <div class="slide">
+      <img src="imagens\img\dragao2.jpg">    </div>
+        <button class="prev" onclick="mudarSlide(3, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(3,1)">&#10095;</button>
+      </div>
+  </li>
+           
+        <li>
+          <strong>Trilha do Vale dos Deuses:</strong> Ideal para quem deseja uma imersão mais tranquila, essa trilha oferece contato direto com riachos e campos de altitude. É comum encontrar campistas e observadores de aves ao longo do caminho, especialmente no Vale dos Frades, região de beleza cênica marcante.
+        
+                <div class="slideshow-container" data-slideshow="4">
+        <div class="slide">
+        <img src="imagens\img\deuses.jpeg">    </div>
+        <div class="slide">
+        <img src="imagens\img\deuses2.JPG">    </div>
+        <button class="prev" onclick="mudarSlide(4,-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(4,1)">&#10095;</button>
+      </div>
+   </li>
+        
+        <li>
+          <strong>Trilha do Morro da Cruz:</strong> Percurso mais curto e de dificuldade leve, ideal para visitantes iniciantes e famílias. O mirante no topo revela uma vista panorâmica de parte do parque e das cidades vizinhas.
+        
+              <div class="slideshow-container" data-slideshow="5">
+        <div class="slide">       
+        <img src="imagens\img\cruz1.jpg">    </div>
+        <div class="slide">
+        <img src="imagens\img\cruz.jpg">    </div>
+        <button class="prev" onclick="mudarSlide(5, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(5, 1)">&#10095;</button>
+      </div>
+   </li>
     </ul>
     </section>
 
     <section id="biodiversidade" class="section">
-        <h2>Biodiversidade</h2>
-        <p>O Parque Estadual dos Três Picos é um verdadeiro santuário ecológico, abrigando um dos maiores contínuos de Mata Atlântica do Brasil. Sua fauna e flora são extremamente diversificadas, resultado da variação de altitude e microclimas presentes em suas montanhas.  
-        São mais de mil espécies de plantas catalogadas, incluindo orquídeas, bromélias e samambaias gigantes.
+    <h2>Biodiversidade</h2>
 
-         <div class="slideshow-container" data-slideshow="6">
-    <div class="slide">       
-     <img src="imagens\img\orquidea.jpg" style="width: 40%;"> </div>
-    <div class="slide">
-     <img src="imagens\img\bromelia.jpg">    </div>
-     <div class="slide"> <img src="imagens\img\samambaia.jpg">    </div>
-     <button class="prev" onclick="mudarSlide(6, -1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(6, 1)">&#10095;</button>
-   </div>
-        Nas áreas mais altas, predominam os campos de altitude, enquanto as encostas abrigam florestas densas e úmidas.  
-        Entre os animais, destacam-se o mico-leão-da-cara-preta, a onça-parda, o gavião-pega-macaco e o tucano-de-bico-preto.
+    <p>
+        O Parque Estadual dos Três Picos é um santuário ecológico e abriga um dos maiores contínuos de Mata Atlântica do Brasil.
+        A variação de altitude e os microclimas presentes na região permitem uma biodiversidade extremamente rica.
+    </p>
 
-         <div class="slideshow-container" data-slideshow="7">
-     <div class="slide">       
-       <img src="imagens\img\mico.jpg">    </div>
-     <div class="slide">
-       <img src="imagens\img\onça.jpg">    </div>
-     <div class="slide">
-       <img src="imagens\img\gaviao.jpg">    </div>
-     <div class="slide">
-       <img src="imagens\img\tucano.jpg">    </div>
-     <button class="prev" onclick="mudarSlide(7, -1)">&#10094;</button>
-     <button class="next" onclick="mudarSlide(7, 1)">&#10095;</button>
-   </div>
+    <p>
+        Mais de mil espécies de plantas já foram catalogadas, incluindo orquídeas, bromélias e samambaias gigantes.
+        Nas áreas altas predominam campos de altitude; nas encostas, florestas densas e úmidas.
+    </p>
 
-    Muitas dessas espécies estão ameaçadas de extinção e encontram no parque um refúgio seguro.  
-        O local também é fundamental para a manutenção dos recursos hídricos da região, abrigando nascentes que dão origem ao Rio Macacu, responsável pelo abastecimento de milhões de pessoas.  
-        Preservar os Três Picos é, portanto, preservar a vida em toda a sua forma — da mais simples à mais complexa.</p>
-    </section>
+    <div class="slideshow-container" data-slideshow="6">
+        <div class="slide"><img src="imagens\img\orquidea.jpg"></div>
+        <div class="slide"><img src="imagens\img\bromelia.jpg"></div>
+        <div class="slide"><img src="imagens\img\samambaia.jpg"></div>
+        <button class="prev" onclick="mudarSlide(6, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(6, 1)">&#10095;</button>
+    </div>
+
+    <p>
+        A fauna também impressiona: mico-leão-da-cara-preta, onça-parda, gavião-pega-macaco, tucano-de-bico-preto,
+        entre outras espécies ameaçadas de extinção, encontram no parque um refúgio seguro.
+    </p>
+
+    <div class="slideshow-container" data-slideshow="7">
+        <div class="slide"><img src="imagens\img\mico.jpg"></div>
+        <div class="slide"><img src="imagens\img\onça.jpg"></div>
+        <div class="slide"><img src="imagens\img\gaviao.jpg"></div>
+        <div class="slide"><img src="imagens\img\tucano.jpg"></div>
+        <button class="prev" onclick="mudarSlide(7, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(7, 1)">&#10095;</button>
+    </div>
+
+    <p>
+        Além disso, o parque é essencial para a manutenção dos recursos hídricos da região, abrigando nascentes
+        que dão origem ao Rio Macacu — responsável pelo abastecimento de milhões de pessoas.
+    </p>
+</section>
+
+    <div id="eventos" class="section">
+            <h2>Eventos e Horários</h2>
+            <p>Participe de eventos especiais e visite o parque em horarios convenientes.</p>
+            <div class="horarios">
+                <p>Horário de Funcionamento: todos os dias, das <strong>8 horas às 17 horas</strong></p>
+                <p>Entrada Gratuita.</p>
+            </div>
+            <ul class="eventos-lista">
+                <li><strong>Caminhada Noturna “Luar na Montanha”:</strong> Passeio guiado com observação das estrelas no Vale dos Deuses. Inclui lanterna, guia e parada para fotos.</li>
+                <li><strong>Festival do Montanhismo Serrano:</strong> Atividades de escalada, slackline, rapel e oficinas de segurança na montanha.</li>
+                <li><strong>Ação Ambiental “Guardião dos Três Picos”:</strong> Mutirão de limpeza, trilha interpretativa e palestra educativa sobre fauna em risco.</li>
+                <li><strong>Observação de Aves:</strong> Evento focado em identificação e fotografia de espécies nativas, acompanhado por biólogos.</li>
+            </ul>
+    </div>
 
     <section id="visita" class="section">
         <h2>Planeje sua Visita</h2>
@@ -150,7 +214,7 @@
         <button id="voltarTopo">Voltar ao topo</button>
     </footer>
 
-    <script src="tres-picos.js"></script>
+    <script src="pages.js"></script>
 </body>
 </html>
 

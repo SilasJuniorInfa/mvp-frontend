@@ -1,89 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parque Montanhas de Teresópolis</title>
+    <title>Parque Natural Municipal Montanhas de Teresópolis</title>
     <link rel="stylesheet" href="pages.css">
 </head>
 <body>
-    <header class="navbar">
-        <a class="menu-principal" href="index-principal.html">Circuito Terê Verde</a>
-        <div class="login-container">
-            <a class="login" href="login.html">login</a>
-         </div>
-    </header>
-    </header>
 
-    <div class="container">
-        <div class="parque-header">
-            <img src="imagens/img-parque-montanhas/parque-montanhas.jpg" alt="Parque Natural Montanhas de Teresópolis"> <!--IMAGEM DO CABEÇALHO AQUI-->
-            <p>Explore a biodiversidade única e as trilhas deslumbrantes deste parque de 5.335 hectares de Mata Atlântica preservada.</p>
-        </div>
+<header class="navbar">
+    <a class="menu-principal" href="../index-principal.html">Circuito Terê Verde</a>
+
+    <div class="login-container">
+        <a class="login" href="../login.html">Login</a>
     </div>
 
-    <div class="section">
-        <h3>Sobre o Parque</h3>
-        <p>Parque Natural das Montanhas de Teresópolis é uma unidade de conservação municipal que abrange 5.335 hectares de Mata Atlântica, oferecendo um refúgio para a biodiversidade local. Ideal para trilhas, escaladas e observação de fauna e flora, o parque promove o ecoturismo sustentável e a educação ambiental. Localizado em terrenos montanhosos, proporciona vistas panorâmicas e experiências imersivas na natureza.</p>
-    </div>
+    <h1><br>Parque Natural Municipal Montanhas de Teresópolis</h1>
+    <p>O paraíso serrano onde natureza e aventura se encontram</p>
+</header>
 
-    <div class="section">
-        <h3>Trilhas Disponíveis</h3>
-        <p>Descubra as principais trilhas do parque, adequadas para diferentes níveis de dificuldade. Sempre verifique as condições climáticas e horários de funcionamento antes de visitar.</p>
-        <ul class="trilhas-lista">
-            <li><strong>Trilha da Pedra da Tartaruga:</strong> É uma das mais acessíveis e populares. Leva a vista panorâmica da cadeia de montanhas. <br>
+<nav>
+    <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#trilhas">Trilhas</a></li>
+        <li><a href="#biodiversidade">Biodiversidade</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#visita">Visitação</a></li>
+    </ul>
+</nav>
+
+<section id="introducao" class="section">
+    <h2>Bem-vindo</h2>
+
+    <p>
+        O Parque Natural Municipal Montanhas de Teresópolis é uma das principais áreas de preservação ambiental do município,
+        abrangendo uma extensa região de Mata Atlântica protegida, formada por vales, montanhas, mirantes naturais e trilhas
+        que conectam o visitante diretamente ao cenário típico da Serra dos Órgãos.
+    </p>
+
+    <p>
+        Criado para preservar ecossistemas locais, proteger nascentes e promover educação ambiental, o parque se tornou referência
+        em turismo ecológico. Sua paisagem inclui formações rochosas icônicas, como a Pedra da Tartaruga, Pedra do Camelo e Pedra do Triunfo,
+        que atraem montanhistas, trilheiros e fotógrafos de toda a região.
+    </p>
+
+    <p>
+        Hoje, o parque é um espaço de contemplação, lazer sustentável e prática de atividades ao ar livre, oferecendo experiências que unem
+        aventura e contato profundo com a natureza.
+    </p>
+
+    <div class="slideshow-container" data-slideshow="1">
+        <!-- Substituir com imagens do Parque Montanhas -->
+        <div class="slide"><img src="imagens/img-parque-montanhas/parque-montanhas.jpg" alt="Imagem do Parque Montanhas"></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas/vista-panoramica-2.webp" alt="Imagem do Parque Montanhas"></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas/vista-panoramica.webp" alt="Imagem do Parque Montanhas"></div>
+
+        <button class="prev" onclick="mudarSlide(1, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1, 1)">&#10095;</button>
+    </div>
+</section>
+
+<section id="historia" class="section">
+    <h2>História</h2>
+
+    <p>
+        O Parque Natural Municipal Montanhas de Teresópolis é resultado de esforços municipais para proteger áreas essenciais de
+        Mata Atlântica e garantir a conservação de ecossistemas naturais presentes na Serra dos Órgãos. A região sempre foi marcada
+        por seus relevos montanhosos, vegetação densa e abundância de nascentes.
+    </p>
+
+    <p>
+        Antes de ser oficialmente parque, a área já era utilizada por montanhistas e aventureiros que buscavam suas trilhas e mirantes
+        naturais. Com o tempo, aumentou a necessidade de preservar o espaço diante do avanço urbano e do interesse crescente do turismo ecológico.
+    </p>
+
+    <p>
+        O parque foi criado com o objetivo de proteger a biodiversidade local, promover educação ambiental e garantir que futuras gerações
+        pudessem desfrutar de suas belezas naturais. Hoje, é considerado um dos pontos mais importantes de conservação ambiental da cidade.
+    </p>
+</section>
+
+<section id="trilhas" class="section">
+    <h2>Trilhas</h2>
+
+    <p>
+        O Parque Montanhas de Teresópolis oferece trilhas para todos os níveis, conectando visitantes a mirantes e formações rochosas únicas da região.
+        Confira algumas das principais opções disponíveis:
+    </p>
+
+    <ul class="trilhas-lista">
+
+        <li>
+            <strong>Trilha da Pedra da Tartaruga:</strong>
+            Uma das mais acessíveis e populares do parque. O trajeto leva a um mirante com vista panorâmica das montanhas da Serra dos Órgãos. <br>
             <strong>Dificuldade:</strong> Fácil <br>
-            <strong>Tempo:</strong> 20-30 minutos</li>
+            <strong>Tempo:</strong> 20–30 minutos
 
-            <li><strong>Trilha da Pedra do Camelo:</strong> Oferece uma experiência mais desafiadora para os amantes de trilha. No topo, leva a uma vista de tirar o folego das montanhas e do vale. <br>
+            <div class="slideshow-container" data-slideshow="2">
+                <!-- Imagens Pedra da Tartaruga -->
+                <div class="slide"><img src="imagens/img-parque-montanhas/pedra-da-tartaruga.jpg" alt=""></div>
+                <div class="slide"><img src="imagens/img-parque-montanhas/mirante-tartaruga.jpg" alt=""></div>
+
+                <button class="prev" onclick="mudarSlide(2, -1)">&#10094;</button>
+                <button class="next" onclick="mudarSlide(2,1)">&#10095;</button>
+            </div>
+        </li>
+
+        <li>
+            <strong>Trilha da Pedra do Camelo:</strong>
+            Com percurso moderado, a trilha leva ao topo de uma formação rochosa que oferece uma das vistas mais impressionantes do parque. <br>
             <strong>Dificuldade:</strong> Moderado <br>
-            <strong>Tempo:</strong> 1 hora </li>
+            <strong>Tempo:</strong> 1 hora
 
-            <li><strong>Trilha da Pedra do Triunfo:</strong> Oferece um desafio maior aos visitantes. Leva a vista das montanhas a sua volta e a florestas da Serra dos Orgãos. <br>
+            <div class="slideshow-container" data-slideshow="3">
+                <!-- Imagens Pedra do Camelo -->
+                <div class="slide"><img src="imagens/img-parque-montanhas/trilha-camelo.webp" alt=""></div>
+                <div class="slide"><img src="imagens/img-parque-montanhas/trilha-do-camelo1.jpg" alt=""></div>
+
+                <button class="prev" onclick="mudarSlide(3, -1)">&#10094;</button>
+                <button class="next" onclick="mudarSlide(3,1)">&#10095;</button>
+            </div>
+        </li>
+
+        <li>
+            <strong>Trilha da Pedra do Triunfo:</strong>
+            Uma das mais desafiadoras do parque, levando a mirantes com vista privilegiada da Serra dos Órgãos e vales ao redor. <br>
             <strong>Dificuldade:</strong> Moderado <br>
-            <strong>Tempo:</strong> 1 hora e 30 minutos</li>
-        </ul>
+            <strong>Tempo:</strong> 1h30
 
-        <div class="section">
-            <h3>Biodiversidade</h3>
-            <p>O parque tem uma rica fauna e flora refletindo o caracter remanescente da Mata Atlântica em altitude:</p>
-            <div class="galeria">
-                <img src="imagens/img-parque-montanhas/fauna-2.webp" alt="Fauna do Parque">
-                <img src="imagens/img-parque-montanhas/flora-1.webp" alt="Flora do Parque">
-                <img src="imagens/img-parque-montanhas/fauna-1.webp" alt="Observação de Aves">
-            </div>
-        </div>
+            <div class="slideshow-container" data-slideshow="4">
+                <!-- Imagens Pedra do Triunfo -->
+                <div class="slide"><img src="imagens/img-parque-montanhas/pedra-triunfo.jpg" alt=""></div>
+                <div class="slide"><img src="imagens/img-parque-montanhas/trilha pedra do triunfo.jpg" alt=""></div>
 
-        <div class="section">
-            <h3>Eventos e Horários</h3>
-            <p>Participe de eventos especiais e visite o parque em horarios convenientes.</p>
-            <div class="horarios">
-                <p>Hotário de Funcionamento: terça a domingo, das 8 horas às 17 horas.</p>
-                <p>Entrada Gratuita.</p>
+                <button class="prev" onclick="mudarSlide(4,-1)">&#10094;</button>
+                <button class="next" onclick="mudarSlide(4,1)">&#10095;</button>
             </div>
-            <ul class="eventos-lista">
-                <li><strong>Evento 1:</strong> Descrição</li>
-                <li><strong>Evento 2:</strong> Descrição</li>
-                <li><strong>Evento 3:</strong> Descrição</li>
-                <li><strong>Evento 4:</strong> Descrição</li>
-                <li><strong>Evento 5:</strong> Descrição</li>
-            </ul>
-        </div>
+        </li>
 
-        <div class="section">
-            <h3>Galeria de Imagens</h3>
-            <p>Veja mais fotos do parque para se inspirar em sua visita.</p>
-            <div class="galeria">
-                <img src="imagens/img-parque-montanhas/vista-panoramica-2.webp" alt="Vista Panorâmica">
-                <img src="imagens/img-parque-montanhas/trilha-camelo.webp" alt="Trilha do Camelo">
-                <img src="imagens/img-parque-montanhas/cachoeira.webp" alt="Cachoeira">
-                <img src="imagens/img-parque-montanhas/fauna-3.webp" alt="Fauna Selvagem">
-            </div>
-        </div>
+    </ul>
+</section>
+
+<section id="biodiversidade" class="section">
+    <h2>Biodiversidade</h2>
+
+    <p>
+        O Parque Montanhas de Teresópolis abriga uma extensa variedade de fauna e flora típicas da Mata Atlântica. Sua vegetação inclui áreas de
+        floresta densa, campos de altitude e regiões rochosas, adaptadas ao relevo irregular da serra.
+    </p>
+
+    <p>
+        Entre as espécies de flora destacam-se bromélias, orquídeas, árvores de grande porte e vegetação rupícola. A fauna inclui diversas espécies
+        de aves, pequenos mamíferos e répteis, além de animais típicos da Serra dos Órgãos.
+    </p>
+
+    <div class="slideshow-container" data-slideshow="6">
+        <div class="slide"><img src="imagens/img-parque-montanhas/flora-1.webp" alt=""></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas//flora-3.webp" alt=""></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas/flora-4.webp" alt=""></div>
+
+        <button class="prev" onclick="mudarSlide(6, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(6, 1)">&#10095;</button>
     </div>
 
-    <footer>
-        © 2025 - MVP Projeto Faculdade
-    </footer>
+    <p>
+        Entre os animais mais observados estão aves como gaviões, tucanos, sabiás, além de pequenos mamíferos e insetos característicos
+        dos ambientes serranos.
+    </p>
+
+    <div class="slideshow-container" data-slideshow="7">
+        <!-- Imagens fauna -->
+        <div class="slide"><img src="imagens/img-parque-montanhas/fauna-1.webp" alt=""></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas/fauna-2.webp" alt=""></div>
+        <div class="slide"><img src="imagens/img-parque-montanhas/fauna-3.webp" alt=""></div>
+
+        <button class="prev" onclick="mudarSlide(7, -1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(7, 1)">&#10095;</button>
+    </div>
+
+    <p>
+        O parque também desempenha papel importante na proteção de nascentes que abastecem áreas do município, garantindo equilíbrio hídrico
+        e conservação dos ecossistemas locais.
+    </p>
+</section>
+
+<div id="eventos" class="section">
+    <h2>Eventos e Horários</h2>
+
+    <p>Participe dos eventos especiais promovidos pelo parque e aproveite horários de funcionamento acessíveis ao público.</p>
+
+    <div class="horarios">
+        <p>Horário de Funcionamento: terça a domingo, das <strong>8h às 17h</strong></p>
+        <p>Entrada Gratuita.</p>
+    </div>
+
+    <ul class="eventos-lista">
+        <li><strong>Trilha Guiada da Pedra da Tartaruga:</strong> Caminhada educativa com guia explicando fauna, flora e geologia local.</li>
+        <li><strong>Encontro de Fotografia da Natureza:</strong> Atividade para fotógrafos amadores e profissionais capturarem o nascer do sol.</li>
+        <li><strong>Mutirão “Montanhas Limpas”:</strong> Ação ambiental envolvendo limpeza de trilhas e sensibilização ecológica.</li>
+        <li><strong>Aula de Yoga ao Ar Livre:</strong> Sessão de relaxamento e meditação no mirante com vista para as montanhas.</li>
+    </ul>
+</div>
+
+<section id="visita" class="section">
+    <h2>Planeje sua Visita</h2>
+
+    <p>
+        A visitação ao parque é gratuita e algumas atividades podem exigir agendamento prévio. Utilize roupas adequadas, traga água,
+        protetor solar, lanterna e preserve o ambiente, mantendo as trilhas limpas.
+    </p>
+</section>
+
+<footer>
+    <p>Projeto acadêmico - Parque Natural Municipal Montanhas de Teresópolis © 2025</p>
+    <button id="voltarTopo">Voltar ao topo</button>
+</footer>
+
+<script src="pages.js"></script>
 </body>
 </html>

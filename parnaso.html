@@ -1,270 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PARNASO — Parque Nacional da Serra dos Órgãos</title>
-  <meta name="description" content="Parque Nacional da Serra dos Órgãos — trilhas, biodiversidade, avisos e mapas." />
-  <link rel="stylesheet" href="parnaso.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Nacional da Serra dos Órgãos</title>
+    <link rel="stylesheet" href="pages.css">
 </head>
 <body>
-  <header class="site-header-top">
-    <div class="container header-top-inner">
-      <div class="brand-top centered">
-        <div class="parnaso-dotted">P.A.R.N.A.S.O</div>
-        <div class="subtitle-large">Parque Nacional da Serra dos Órgãos</div>
-        <div class="tagline">“Um monumento da Mata Atlântica entre rochas, trilhas e biodiversidade”</div>
-      </div>
 
-      <!-- ALERTS (avisos de destaque) -->
-      <div id="alerts-area" class="alerts-area" aria-live="polite"></div>
+<header class="navbar">
+      <a class="menu-principal" href="../index-principal.html">Circuito Terê Verde</a>
 
-      <!-- Card de tópicos -->
-      <div class="topics-card card">
-        <h3 class="topics-title">TÓPICOS</h3>
-        <div id="topics-carousel" class="topics-carousel">
-          <!-- botões são gerados automaticamente pelo JS (baseado nas sections) -->
-        </div>
+    <div class="login-container">
+      <a class="login" href="../login.html">Login</a>
+  </div>
+    <h1><br>Parque Nacional da Serra dos Órgãos</h1>
+    <p>Um monumento da Mata Atlântica entre rochas, trilhas e biodiversidade</p>
+</header>
 
-        <!-- botões rápidos adicionais para descer diretamente aos tópicos novos -->
+<nav>
+    <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#trilhas">Trilhas</a></li>
+        <li><a href="#biodiversidade">Biodiversidade</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#visita">Visitação</a></li>
+    </ul>
+</nav>
+
+<section id="introducao" class="section">
+<h2>Bem-vindo</h2>
+
+<p>
+    Localizado na Região Serrana do Rio de Janeiro e abrangendo Teresópolis, Petrópolis,
+    Magé e Guapimirim, o Parque Nacional da Serra dos Órgãos (PARNASO) é uma das mais
+    importantes unidades de conservação do país. Criado para proteger paisagens únicas,
+    montanhas monumentais e um grande contínuo de Mata Atlântica, o parque reúne
+    biodiversidade exuberante, rios cristalinos e trilhas que fazem história.
+</p>
+
+<p>
+    Com cerca de 20 mil hectares protegidos, o PARNASO abriga formações rochosas
+    imponentes — incluindo o famoso Dedo de Deus, símbolo nacional do montanhismo —,
+    além de encostas íngremes, florestas densas e campos de altitude. É um destino ideal
+    para aventureiros, montanhistas, fotógrafos, pesquisadores e amantes da natureza.
+</p>
+
+<p>
+    Muito mais que um ponto turístico, o parque desempenha papel essencial na proteção de
+    ecossistemas frágeis e das nascentes que abastecem cidades vizinhas. Visitar o PARNASO
+    é vivenciar a conexão entre história, ciência, conservação e aventura.
+</p>
+
+<div class="slideshow-container" data-slideshow="1">
+    <div class="slide"><img src="imagens/parque-nacional-da-serra-dos-orgaos.jpg" alt=""> <!-- IMAGEM DO PARNASO AQUI --></div>
+    <div class="slide"><img src="imagens/img-parnaso/dedo-de-deus.jpg" alt=""> <!-- IMAGEM DO PARNASO AQUI --></div>
+    <div class="slide"><img src="imagens/img-parnaso/parnaso1.jpg" alt=""> <!-- IMAGEM DO PARNASO AQUI --></div>
+    <button class="prev" onclick="mudarSlide(1, -1)">&#10094;</button>
+    <button class="next" onclick="mudarSlide(1, 1)">&#10095;</button>
+</div>
+</section>
+
+<section id="historia" class="section">
+<h2>História</h2>
+
+<p>
+    O Parque Nacional da Serra dos Órgãos foi criado em 30 de novembro de 1939 pelo
+    decreto nº 1.822, tornando-se um dos primeiros parques nacionais do Brasil. Seu objetivo
+    inicial era proteger a paisagem singular formada pelas montanhas da Serra do Mar e a
+    biodiversidade associada.
+</p>
+
+<p>
+    O nome “Serra dos Órgãos” surgiu dos primeiros portugueses que, ao avistar os picos,
+    compararam as montanhas aos tubos de um órgão de igreja. Desde então, essas
+    formações icônicas se tornaram referência para montanhistas e naturalistas.
+</p>
+
+<p>
+    A história do parque está diretamente ligada à evolução do montanhismo nacional,
+    principalmente após a primeira ascensão do Dedo de Deus em 1912, marco histórico da
+    escalada brasileira.
+</p>
+
+<p>
+    Em 2022, uma lei redefiniu os limites do parque, incluindo novas áreas de floresta e
+    ajustando trechos ocupados há décadas. Hoje, o PARNASO é referência em conservação,
+    pesquisa, turismo sustentável e educação ambiental.
+</p>
+</section>
+
+<section id="trilhas" class="section">
+    <h2>Trilhas</h2>
+    <p>O PARNASO possui a maior rede de trilhas do Brasil, com mais de 200 km de caminhos
+       oficiais que variam de percursos leves a travessias de alta montanha. É um dos melhores
+       destinos do país para caminhadas, contemplação e montanhismo.</p>
+
+<ul class="trilhas-lista">
+
+    <li>
+        <strong>Travessia Petrópolis–Teresópolis:</strong>
+        Considerada uma das mais belas do Brasil, possui cerca de 30 km e é realizada em 2 a 3 dias,
+        passando por campos de altitude, cumes e visuais épicos como Castelo do Açu e Pedra do Sino.
         
-      </div>
-
-      <!-- Alternar tema (área verde abaixo do card) -->
-      <div class="theme-bottom">
-        <button id="toggle-theme-bottom" class="btn small" type="button">Alternar tema</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="container main-content">
-    <!-- HISTÓRIA -->
-    <section id="historia" class="card topic-card centered-card">
-      <h2 class="card-title">História e origem</h2>
-      <p class="lead centered"> Localizado na <strong>Região Serrana do Rio de Janeiro</strong>, abrangendo os municípios de <strong>Teresópolis, Petrópolis, Magé e Guapimirim</strong>, o Parque Nacional da Serra dos Órgãos (PARNASO) é uma <strong>unidade de conservação federal de proteção integral</strong> criada para preservar paisagens incríveis, ecossistemas da Mata Atlântica e rochas icônicas de escalada. Ele abriga montanhas impressionantes, encostas íngremes, vegetação rica, trilhas notáveis e desafios para o montanhismo, além de cumprir papel vital para a conservação da biodiversidade. O PARNASO foi formalmente criado em <strong>30/11/1939</strong>  pelo decreto nº 1.822, com o objetivo de <strong>“proteger a paisagem excepcional deste trecho da Serra do Mar e sua biodiversidade”</strong>.<br><br> Com cerca de 19.855 a 20.024 hectares protegidos, a unidade tem o nome <strong>“Serra dos Órgãos”</strong> pois refere-se ao aspecto das formações rochosas que lembravam à vista dos primeiros portugueses os <strong>“tubos de um órgão de igreja”.</strong> O parque está entre os mais antigos do Brasil e é considerado o <strong>terceiro parque nacional mais antigo do país</strong>.</p>
-      <div class="carousel" id="carousel-historia" tabindex="0">
-        <div class="img-desc" aria-live="polite">Dedo de Deus — formação icônica.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Dedo de Deus visto de Teresópolis">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Dedo_de_Deus_vista_do_Soberbo.jpg/1280px-Dedo_de_Deus_vista_do_Soberbo.jpg" alt="Dedo de Deus">
-          </figure>
-          <figure class="slide" data-desc="Paisagem histórica">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Amanhecer_no_Hercules_--.jpg/1280px-Amanhecer_no_Hercules_--.jpg" alt="Paisagem histórica">
-          </figure>
-          <figure class="slide" data-desc="Pedra do Sino vista da descida da Serra">
-            <img src="http://parnaso.tur.br/cms/wp-content/uploads/2017/12/bruno-nepomuceno-trilha-do-sino-2.jpg" alt="Pedra do Sino">
-          </figure>
+        <div class="slideshow-container" data-slideshow="2">
+            <div class="slide"><img src="imagens/img-parnaso/tere-petro.jpg" alt=""> <!-- PARNASO --></div>
+            <div class="slide"><img src="imagens/img-parnaso/tere-petro2.jpg" alt=""></div>
+            <div class="slide"><img src="imagens/img-parnaso/tere-petro3.jpg" alt=""></div>
+            <button class="prev" onclick="mudarSlide(2, -1)">&#10094;</button>
+            <button class="next" onclick="mudarSlide(2, 1)">&#10095;</button>
         </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-historia" aria-label="Imagem anterior">◀</button>
-          <button class="next" data-target="carousel-historia" aria-label="Próxima imagem">▶</button>
-        </div>
-      </div>
-    </section>
+    </li>
 
-     <!-- SEDES -->
-    <section id="visitacao" class="card topic-card centered-card">
-      <h2 class="card-title">Sedes</h2>
-      <p class="lead centered">O <strong>PARNASO</strong> conta com <strong>quatro sedes oficiais</strong> distribuídas pelos municípios de <strong>Teresópolis, Petrópolis, Guapimirim e Magé</strong>, cada uma oferecendo diferentes tipos de acesso, atividades e estruturas para visitantes.<br><br> A <strong>Sede Teresópolis</strong> é a mais completa, reunindo centro de visitantes, áreas de camping, estacionamento, abrigo para montanhistas e o início de trilhas famosas, como a da Pedra do Sino.<br><br> A <strong>Sede Petrópolis</strong>, localizada no <strong>Vale do Bonfim</strong>, é o ponto de partida da tradicional <strong>Travessia Petrópolis–Teresópolis</strong>, sendo frequentada principalmente por trilheiros experientes e visitantes interessados em percursos mais longos.<br><br> A <strong>Sede Guapimirim</strong>, é voltada ao lazer e às atividades em meio à natureza, destacando-se pelas cachoeiras, piscinas naturais e trilhas curtas, sendo a opção ideal para famílias e para quem busca contato direto com a Mata Atlântica.<br><br> A <strong>Sede Magé</strong> é a mais recente e tranquila, oferecendo trilhas leves, espaços de educação ambiental e áreas propícias para observação da fauna e flora.<br><br> Abaixo temos os <strong>Mapas de Trilhas</strong> das <strong>3 princípais Sedes do PARNASO</strong>, os quais podem ser abertos em maior <strong>resolução ao clicar nos mesmos na Galeria de Imagens, ao final da página</strong>.</p>
-      <div class="carousel" id="carousel-visitacao" tabindex="0">
-        <div class="img-desc">Entrada e infraestrutura de apoio.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Sede Teresópolis">
-            <img src="https://scontent-gig4-1.xx.fbcdn.net/v/t39.30808-6/504478868_3057175364441517_6288963511423754712_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T795_ELSvZYQ7kNvwFrNJ0V&_nc_oc=AdmTQKOF7nboYgdw-PAb5Pr9lNKjT_YQD_xvcy8qZ7xi27EMAUB_oMtiPQovqvRZzAE&_nc_zt=23&_nc_ht=scontent-gig4-1.xx&_nc_gid=OoKrDhsldiSL_DGgmBzMyA&oh=00_AfjXz1QdmHg-G6516BzyUQiQIVU_MKWmRQKz4W5oDUq4sA&oe=692ACF4A" alt="Sede Teresópolis">
-          </figure>
-          <figure class="slide" data-desc="Sede Petrópolis">
-            <img src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/504457842_3057175287774858_8696845580305218117_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=th-iZWL9OI4Q7kNvwEtmmfk&_nc_oc=AdnoCiSJypvNofYyPBeZM8JY2ciSMbKEy3kILeXCECv6RyDRJGMXPq7rHvAsf6JfvvU&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=WFT6zUezSQhJUErqsCGaBA&oh=00_AfgR29QEZbnKEcPWEe--HGUEXzcYfnaFZoT8gH1cpZw6IA&oe=692AC0B3" alt="Sede Petrópolis">
-          </figure>
-          <figure class="slide" data-desc="Sede Guapimirim">
-            <img src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/504113014_3057175204441533_1639569360484442700_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qTDMXZFjznEQ7kNvwEJqugQ&_nc_oc=AdlD3Zd7e1rv3H8XsqJrDaA53sg4kBsv3dWqaEu6YmkJUy6Yf7PGdBfv5yOvDf-DA7I&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=8WE-KI1DkioLKkGop-U7xw&oh=00_Afjk7NHSqwkukNMvIpLdjkS5K_8y7lxrYkcXRmgS5tnG8Q&oe=692AE778" alt="Sede Guapimirim">
-          </figure>
+    <li>
+        <strong>Trilha do Dedo de Deus:</strong>
+        O grande símbolo do montanhismo nacional. A trilha leva ao mirante da base da montanha, e
+        a escalada ao topo é considerada uma das mais icônicas do país. Requer guia e experiência.
+        
+        <div class="slideshow-container" data-slideshow="3">
+            <div class="slide"><img src="imagens/img-parnaso/dedo-de-deus-3.jpg"></div>
+            <div class="slide"><img src="imagens/img-parnaso/dedos-de-deus2.jpg"></div>
+            <button class="prev" onclick="mudarSlide(3, -1)">&#10094;</button>
+            <button class="next" onclick="mudarSlide(3, 1)">&#10095;</button>
         </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-visitacao">◀</button>
-          <button class="next" data-target="carousel-visitacao">▶</button>
+    </li>
+
+    <li>
+        <strong>Pedra do Sino:</strong>
+        Com 2.263 metros, é o ponto mais alto da Serra dos Órgãos. A trilha sai de Teresópolis,
+        possui cerca de 11 km e oferece vistas que alcançam a Baía de Guanabara em dias claros.
+        
+        <div class="slideshow-container" data-slideshow="4">
+            <div class="slide"><img src="imagens/img-parnaso/pedra-do-sino.jpg"></div>
+            <div class="slide"><img src="imagens/img-parnaso/pedra-do-sino2.jpg"></div>
+            <button class="prev" onclick="mudarSlide(4,-1)">&#10094;</button>
+            <button class="next" onclick="mudarSlide(4,1)">&#10095;</button>
         </div>
-      </div>
-    </section>
+    </li>
+</ul>
+</section>
 
-    <!-- VISITAÇÃO -->
-    <section id="visitacao" class="card topic-card centered-card">
-      <h2 class="card-title">Visitação</h2>
-      <p class="lead centered">O acesso a <strong>sede principal</strong> é via <strong>Teresópolis, pela Av. Rotariana s/n</strong> (subida da serra). O parque está aberto o ano todo, mas algumas atividades como <strong>montanhismo nas partes altas</strong> têm temporadas mais favoráveis <strong>entre maio e setembro</strong>. Há infraestrutura de visitação, com sede administrativa, trilhas de diversos níveis, abrigos de montanha, e mirantes. <strong>É recomendável sempre checar as condições climáticas, as normas do parque, restrições ou necessidade de guia para trilhas mais difíceis ou áreas de montanha</strong>.</p>
-      <div class="carousel" id="carousel-visitacao" tabindex="0">
-        <div class="img-desc">Entrada e infraestrutura de apoio.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Entrada do parque e área de recepção">
-            <img src="https://netdiario.com.br/wp-content/uploads/2021/11/2021.08.07-14.56.02-01.jpg" alt="Entrada do parque">
-          </figure>
-          <figure class="slide" data-desc="Abrigos de montanha e pontos de apoio">
-            <img src="https://lh5.googleusercontent.com/proxy/0VW7_78Cc7-Kvvx8IrtNLHUVVHPmZtw0TklycvQACzTQGWjHQF0a6otVGNjOkkiqOmOV09O6N0LVo2jL4S5KmSNMTsesNKRxbI5eSYPbcyAXnUEW_h4" alt="Abrigos">
-          </figure>
+<section id="biodiversidade" class="section">
+<h2>Biodiversidade</h2>
+
+<p>
+    O PARNASO está inserido em um dos maiores remanescentes de Mata Atlântica do país,
+    com mais de 2.800 espécies de plantas registradas, entre elas centenas de orquídeas,
+    bromélias e espécies endêmicas. A vegetação varia conforme a altitude, indo de florestas
+    úmidas até campos de altitude acima de 2.000 metros.
+</p>
+
+<div class="slideshow-container" data-slideshow="6">
+    <div class="slide"><img src="imagens/img-parnaso/flora-1.jpg"></div>
+    <div class="slide"><img src="imagens/img-parnaso/flora-2.webp"></div>
+    <div class="slide"><img src="imagens/img-parnaso/fauna-3.jpg"></div>
+    <button class="prev" onclick="mudarSlide(6, -1)">&#10094;</button>
+    <button class="next" onclick="mudarSlide(6, 1)">&#10095;</button>
+</div>
+
+<p>
+    A fauna é igualmente rica: incluem-se espécies marcantes como o muriqui-do-sul,
+    gavião-pega-macaco, onça-pintada (registros de 2008), serpentes raras e diversas aves
+    endêmicas. O parque é essencial para a conservação desses ecossistemas e para a
+    proteção das nascentes que abastecem municípios vizinhos.
+</p>
+
+<div class="slideshow-container" data-slideshow="7">
+    <div class="slide"><img src="imagens/img-parnaso/fauna-2.jpg"></div>
+    <div class="slide"><img src="imagens/img-parnaso/fauna-4.jpg"></div>
+    <div class="slide"><img src="imagens/img-parnaso/fauna-1.jpg"></div>
+    <div class="slide"><img src="imagens/img-parnaso/fauna-5.jpg"></div>
+    <button class="prev" onclick="mudarSlide(7, -1)">&#10094;</button>
+    <button class="next" onclick="mudarSlide(7, 1)">&#10095;</button>
+</div>
+
+<p>
+    O PARNASO é uma das principais fontes hídricas da Serra do Mar, abrigando rios como o
+    Paquequer, Soberbo e Frades, além de cachoeiras famosas como Véu da Noiva e
+    Andorinhas — verdadeiros cartões-postais naturais.
+</p>
+</section>
+
+<div id="eventos" class="section">
+        <h2>Eventos e Horários</h2>
+        <p>O parque recebe eventos educativos, de montanhismo, observação de aves e ações de conservação.</p>
+
+        <div class="horarios">
+            <p><strong>Horário de Funcionamento:</strong> terça a domingo, das 8h às 17h.</p>
+            <p>Algumas trilhas exigem agendamento ou guia credenciado.</p>
         </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-visitacao">◀</button>
-          <button class="next" data-target="carousel-visitacao">▶</button>
-        </div>
-      </div>
-    </section>
 
-    <!-- TRILHAS -->
-    <section id="trilhas" class="card topic-card centered-card">
-      <h2 class="card-title">Trilhas e experiências</h2>
-      <p class="lead centered">O PARNASO possui a <strong>maior rede de trilhas do Brasil</strong>, com mais de <strong>200 km</strong> de trilhas catalogadas, abrangendo desde percursos acessíveis até travessias de alta dificuldade. Dentre algumas das trilhas mais famosas estão: <br><br> A <strong>Travessia Petrópolis-Teresópolis</strong>, com aproximadamente 30 km e geralmente realizada em 2-3 dias, atravessa cumes, campos de altitude e exige bom preparo físico.<br> <br>A trilha para <strong>o topo do Dedo de Deus</strong>, com <strong>1.692 m de altitude</strong>, símbolo da escalada no país. <br><br>A trilha da Pedra do Sino é uma das mais famosas do <strong>PARNASO</strong> e leva ao <strong>ponto mais alto da serra, com 2.275 metros de altitude</strong>. Possui cerca de <strong></strong>11 km de extensão (só a ida)</strong> e é considerada <strong>moderada a difícil</strong>.<br><br>Trilhas de nível mais leve, mirantes, cachoeiras e natureza para apreciação, como a <strong>trilha do Cartão Postal e a Trilha Suspensa</strong>.<br><br><i>Experiências do parque: caminhada de lazer, escalada, rapel, observação de aves, imersão em matas, e etc.</i></p>
-      <div class="carousel" id="carousel-trilhas" tabindex="0">
-        <div class="img-desc">Travessia Petrópolis–Teresópolis — campos de altitude.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Travessia Petrópolis–Teresópolis">
-            <img src="https://i0.wp.com/botasnatrilha.com.br/wp-content/uploads/2022/05/EDSC_0025.jpg?w=1000&ssl=1" alt="Travessia Petrópolis-Teresópolis">
-          </figure>
-          <figure class="slide" data-desc="Trilha para o topo do Dedo de Deus">
-            <img src="https://adrenario.org/wp-content/uploads/2023/09/IMG_4243.jpg" alt="Trilha para o topo do Dedo de Deus">
-          </figure>
-          <figure class="slide" data-desc="Topo da trilha para a Pedra do Sino">
-            <img src="https://netdiario.com.br/wp-content/uploads/2025/08/zmochileiro-pedra-do-sino2-MM-1024x591.jpg" alt="Trilha para a Pedra do sino">
-          </figure>
-          <figure class="slide" data-desc="Topo da trilha do Cartão Postal">
-            <img src="https://s0.wklcdn.com/image_311/9335694/107055399/69252297Master.jpg" alt="Trilha do Cartão Postal">
-          </figure>
-          <figure class="slide" data-desc="Trilha Suspensa">
-            <img src="https://netdiario.com.br/wp-content/uploads/2023/11/ztrilha_suspensa5-1536x1024.jpg" alt="Trilha Suspensa">
-          </figure>
-        </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-trilhas">◀</button>
-          <button class="next" data-target="carousel-trilhas">▶</button>
-        </div>
-      </div>
-    </section>
+        <ul class="eventos-lista">
+            <li><strong>Caminhadas guiadas:</strong> atividades educativas e visitas interpretativas.</li>
+            <li><strong>Eventos de montanhismo:</strong> escalada, travessias e oficinas de segurança.</li>
+            <li><strong>Mutirões ambientais:</strong> ações de limpeza, trilhas interpretativas e conservação.</li>
+            <li><strong>Observação de aves:</strong> atividade guiada por biólogos especialistas.</li>
+        </ul>
+</div>
 
-    <!-- BIODIVERSIDADE -->
-    <section id="biodiversidade" class="card topic-card centered-card">
-      <h2 class="card-title">Biodiversidade</h2>
-      <p class="lead centered">O parque é conhecido pela sua rica biodiversidade, e está inserido no bioma da <strong>Mata Atlântica</strong>, considerado um dos mais <strong>ameaçados do Brasil e da biodiversidade global</strong>. <br><br>Flora:É marcada principalmente pela Mata Atlântica, abrigando uma grande variedade de espécies de árvores, arbustos e mais de <strong>2 800</strong> espécies de plantas registradas, incluindo cerca de <strong>369 orquídeas</strong> e mais de <strong>100 bromélias</strong>. <br><br>Fauna: A fauna do parque é igualmente diversificada, incluindo mamíferos como o <strong>mico-leão-dourado, o cachorro-do-mato e a jaguatirica</strong>. A avifauna é muito rica, com aves como <strong>tucanos, sabiás e jacus</strong>. Répteis, anfíbios e uma grande variedade de insetos completam o ecossistema abundante e rico, com <strong>centenas de espécies</strong>.<br>É <strong>importante</strong> lembrar que um dos objetivos do parque é <strong>servir como um local para a preservação de fauna e flora ameaçados de extinção</strong>.<br><br> <strong>Exemplos da Fauna local:</strong></p>
-      <div class="carousel" id="carousel-biodiversidade" tabindex="0">
-        <div class="img-desc">Muriqui-do-sul — primata emblemático.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Mamífero: Muriqui (Brachyteles arachnoides)">
-            <img src="https://curiosidadeanimalbrasil.wordpress.com/wp-content/uploads/2016/03/muriqui-do-sul_robson-hack.jpg" alt="Muriqui">
-          </figure>
-          <figure class="slide" data-desc="Ave: Gavião-pega-macaco (Spizaetus tyrannus)">
-            <img src="https://photoaves.com/wp-content/uploads/aves/accipitridae/gaviao-pega-macaco.jpg" alt="pega-macaco">
-          </figure>
-          <figure class="slide" data-desc="Anfíbio: Sapo-cururu (Rhinella icterica)">
-            <img src="https://institutoninarosa.org.br/wp-content/uploads/2024/05/sapo-cururu-na-beira-do-rio.png" alt="Cururu">
-          </figure>
-          <figure class="slide" data-desc="Réptil: Cobra-coral-verdadeira (Micrurus corallinus)">
-            <img src="https://i0.wp.com/segredosdomundo.r7.com/wp-content/uploads/2021/02/cobra-coral-verdadeira-e-falsa-coral-entenda-as-diferencas.jpg?w=1000&quality=89&ssl=1" alt="Cobra-coral">
-          </figure>
-        </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-biodiversidade">◀</button>
-          <button class="next" data-target="carousel-biodiversidade">▶</button>
-        </div>
-      </div>
-    </section>
+<section id="visita" class="section">
+    <h2>Planeje sua Visita</h2>
+    <p>
+        O PARNASO oferece sede com infraestrutura, trilhas bem demarcadas, áreas de camping,
+        abrigos de montanha e mirantes. Recomenda-se verificar regras, condições do tempo e
+        possíveis restrições antes da visita. Equipamento adequado é essencial em trilhas longas.
+    </p>
+</section>
 
-    <!-- HIDROGRAFIA -->
-    <section id="hidrografia" class="card topic-card centered-card">
-      <h2 class="card-title">Hidrografia</h2>
-      <p class="lead centered">O parque protege <strong>nascentes e bacias hidrográficas que abastecem as cidades vizinhas</strong>, e também é uma das principais <strong>áreas produtoras de água da Serra do Mar</strong>, com inúmeras nascentes, riachos e cachoeiras que abastecem cidades como <strong>Teresópolis, Petrópolis, Guapimirim e Magé</strong>. As águas pertencem principalmente às bacias dos <strong>rios Paquequer e Soberbo</strong>, que correm em direção à <strong>Baía de Guanabara</strong>.<br><br> Entre os cursos d’água mais conhecidos estão o <strong>Rio Soberbo, o Rio Paquequer, o Ribeirão dos Frades e o Córrego da Barragem</strong>. O parque abriga várias cachoeiras e poços famosos, como a <strong>Cachoeira Véu da Noiva, a Cachoeira da Primavera, a Cachoeira das Andorinhas, o Poço Paraíso e a Cachoeira do Garrafão</strong>, e as águas <strong>frias e cristalinas</strong> são um dos <strong>principais</strong> atrativos turísticos do <strong>PARNASO</strong>, formando paisagens de grande beleza natural.</p>
-      <div class="carousel" id="carousel-hidrografia" tabindex="0">
-        <div class="img-desc">Cachoeira Véu da Noiva.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Cachoeira Véu da Noiva">
-            <img src="https://www.trilhaseaventuras.com.br/wp-content/uploads/2016/03/Cachoeira-V%C3%A9u-da-Noiva-Petr%C3%B3polis-17-1024x674.jpg" alt="Véu da Noiva">
-          </figure>
-          <figure class="slide" data-desc="Poço Paraíso">
-            <img src="https://www.trilhaseaventuras.com.br/wp-content/uploads/2016/03/Cachoeira-V%C3%A9u-da-Noiva-Petr%C3%B3polis-01.jpg" alt="Poço Paraíso">
-          </figure>
-          <figure class="slide" data-desc="Cachoeira das Andorinhas">
-            <img src="https://arrumaessamala.com.br/wp-content/uploads/2019/09/petropolis-serra-dos-orgaos8.jpg" alt="Cachoeira das Andorinhas">
-          </figure>
-          <figure class="slide" data-desc="Cachoeira do Garrafão">
-            <img src="https://netdiario.com.br/wp-content/uploads/2023/03/zmochila2-1536x1025.jpg" alt="Cachoeira do Garrafão">
-          </figure>
-        </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-hidrografia">◀</button>
-          <button class="next" data-target="carousel-hidrografia">▶</button>
-        </div>
-      </div>
-    </section>
+<footer>
+    <p>Projeto acadêmico - Parque Nacional da Serra dos Órgãos © 2025</p>
+    <button id="voltarTopo">Voltar ao topo</button>
+</footer>
 
-    <!-- CLIMA -->
-    <section id="clima" class="card topic-card centered-card">
-      <h2 class="card-title">Clima</h2>
-      <p class="lead centered">O clima do <strong>PARNASO</strong> é fortemente influenciado pela sua localização na <strong>Região Serrana do Rio de Janeiro</strong> e <strong>pela grande variação de altitude</strong>, que vai <strong>até mais de 2.200 metros</strong>. Por esse motivo, o parque apresenta um clima predominantemente úmido e instável, característico da Mata <strong>Atlântica de montanha</strong>.<br><br> As temperaturas <strong>tendem a serem baixas</strong>, e nas áreas altas, como na <strong>trilha da Pedra do Sino</strong>, as temperaturas podem cair para perto de <strong>0°C durante o inverno</strong>, especialmente à noite e ao amanhecer. A presença de <strong>neblina</strong> é muito comum, reduzindo a visibilidade e dando ao parque um aspecto frio e úmido na maior parte do ano. <br><br> As chuvas são <strong>frequentes</strong>, especialmente entre a <strong>primavera e o verão</strong>, quando podem ocorrer <strong>tempestades rápidas e intensas</strong>. Já no <strong>outono e no inverno</strong> chove menos, mas o clima continua <strong>fresco e sujeito a mudanças bruscas</strong>. Por isso, visitantes e trilheiros devem estar sempre preparados com <strong>agasalhos, capa de chuva e equipamentos adequados</strong>.</p>
-      <div class="carousel" id="carousel-clima" tabindex="0">
-        <div class="img-desc">Dia nebuloso na serra.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Neblina típica da serra">
-            <img src="https://www.trilhaseaventuras.com.br/wp-content/uploads/2014/01/travessia-petro-tere04.jpg" alt="Neblina">
-          </figure>
-          <figure class="slide" data-desc="Temperatura registrada num dia chuvoso nas proximidades do Parque">
-            <img src="https://netdiario.com.br/wp-content/uploads/2021/11/2018.05.14-09.11.12-01.jpg" alt="Temperatura">
-          </figure>
-        </div>
-        <div class="controls">
-          <button class="prev" data-target="carousel-clima">◀</button>
-          <button class="next" data-target="carousel-clima">▶</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEGURANÇA -->
-    <section id="Segurança" class="card topic-card centered-card">
-      <h2 class="card-title">Segurança</h2>
-      <p class="lead centered">A segurança no <strong>PARNASO</strong> é uma prioridade e envolve tanto as ações da <strong>equipe de fiscalização</strong> quanto os cuidados essenciais dos visitantes. O parque possui <strong>postos de controle, orientações de conduta, monitoramento constante de trilhas e profissionais capacitados para emergências</strong>, especialmente nas áreas com <strong>trilhas mais dificeis, como acesso ao Dedo de Deus, Pedra do Sino e travessia Petrópolis–Teresópolis</strong>. <br><br> O ambiente natural <strong>exige atenção</strong>. O relevo montanhoso, as trilhas longas e a possibilidade de mudanças rápidas no clima tornam <strong>fundamental que os visitantes planejem sua visita com responsabilidade</strong>. É recomendado: <br><br><strong>Registrar-se na portaria antes de iniciar qualquer trilha;<br>Seguir somente caminhos oficiais e bem sinalizados;<br>Levar água, lanterna, alimentos, capa de chuva e roupas adequadas;<br>Evitar caminhar sozinho em trechos isolados;Respeitar limites e avisos das equipes do parque.</strong><br><br>O <strong>PARNASO</strong> também mantém regras de preservação para evitar <strong>acidentes com animais silvestres, quedas em áreas de pedra molhada, enchentes repentinas e situações de desorientação em dias de forte neblina</strong>. A combinação de preparo pessoal, atenção e respeito às normas <strong>garante uma experiência segura e agradável</strong>.</p>
-      <div class="carousel" id="carousel-clima" tabindex="0">
-        <div class="img-desc">Exemplo de Preparo.</div>
-        <div class="slides">
-          <figure class="slide" data-desc="Exemplo de preparo">
-            <img src="https://netdiario.com.br/wp-content/uploads/2025/08/zmochileiro-pedra-do-sino1-MM-1024x578.jpg" alt="Segurança">
-          </figure>
-      </div>
-    </section>
-
-    <!-- MAPA  -->
-    <section id="mapa" class="card centered-card">
-      <h2 class="card-title">Mapa — Localização</h2>
-      <p class="centered">Visão aproximada do Parque (área geral entre Teresópolis e Petrópolis).</p>
-      <div class="map-wrapper">
-        <iframe
-          title="Mapa PARNASO"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-43.05%2C-22.52%2C-42.88%2C-22.37&amp;layer=mapnik"
-          style="border:1px solid rgba(0,0,0,0.12);width:100%;height:420px;border-radius:12px;"
-          loading="lazy"></iframe>
-        <p style="font-size:.9rem;margin-top:.5rem;color:#3b5b45">Origem: OpenStreetMap</p>
-      </div>
-    </section>
-
-    <!-- Galeria final (compila automaticamente as imagens inseridas nos tópicos) -->
-    <section id="galeria-final" class="card centered-card">
-      <h2 class="card-title">Galeria de localidades (compilado)</h2>
-      <p class="centered">Todas as imagens dos tópicos reunidas abaixo (clicáveis).</p>
-      <div id="gallery-collection" class="gallery-collection"></div>
-
-      <div class="centered" style="margin-top:1rem;margin-bottom:.6rem">
-        <button id="scroll-top-bottom" class="btn" type="button">Subir</button>
-      </div>
-    </section>
-
-    <section id="fontes" class="card centered-card">
-      <h2 class="card-title">Fontes</h2>
-      <p class="align-left">"Portal do ICMBio – “Parque Nacional da Serra dos Órgãos” Serviços e Informações do Brasil+1<br>
-“10 fatos e curiosidades sobre o PARNASO, em Petrópolis” (SouPetrópolis) Sou Petrópolis<br>
-“Flora — Instituto Chico Mendes de Conservação da Biodiversidade” Serviços e Informações do Brasil<br>
-WikiParques – “Parque Nacional da Serra dos Órgãos” wikiparques.org<br></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="ano"></span> — Parque Nacional da Serra dos Órgãos (PARNASO).</p>
-    </div>
-  </footer>
-
-  <script src="parnaso.js"></script>
+<script src="pages.js"></script>
 </body>
 </html>
