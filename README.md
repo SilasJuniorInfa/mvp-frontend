@@ -72,9 +72,15 @@ O navegador abrirá automaticamente com a aplicação rodando.
  - Dificuldade de planejamento da visitação desses parques por falta de informação.
 
 ## Ferramenta de prototipação:
- - Power Point.
+ - Word.
 
 ## Telas prototipadas:
  - Tela de login - baixa fidelidade.
  - Tela dos administradores - baixa fidelidade.
  - Página Principal com os três parques - baixa fidelidade.
+
+## Protótipos:
+ - 
+
+## Lista de Requisitos:
+ [Lista de Requisitos Funcionais e Não Funcionais](https://docs.google.com/spreadsheets/d/1eXjbKm3DM3D6eWkDbGKDk81O2DlZTn76d61yvS01E0I/edit?gid=1007008643#gid=1007008643)
