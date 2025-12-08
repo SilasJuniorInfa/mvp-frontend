@@ -80,7 +80,12 @@ O navegador abrirá automaticamente com a aplicação rodando.
  - Página Principal com os três parques - baixa fidelidade.
 
 ## Protótipos:
- - 
+ - <img width="663" height="535" alt="image" src="https://github.com/user-attachments/assets/617fa338-522b-4b1e-97cd-b5a86c59f92d" />
+ - <img width="696" height="393" alt="image" src="https://github.com/user-attachments/assets/17e234bd-cf41-427a-90a0-546379634fb6" />
+ - <img width="596" height="479" alt="image" src="https://github.com/user-attachments/assets/dcc8ce9e-100a-46c2-9201-21229af21c8a" />
+
+
+
 
 ## Lista de Requisitos:
  [Lista de Requisitos Funcionais e Não Funcionais](https://docs.google.com/spreadsheets/d/1eXjbKm3DM3D6eWkDbGKDk81O2DlZTn76d61yvS01E0I/edit?gid=1007008643#gid=1007008643)
